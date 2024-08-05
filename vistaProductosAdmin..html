@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimarket</title>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="imagenes/descarga.jpeg" alt="Isabella" class="user-icon">
+                <h2>Isabella</h2>
+                <p>ADMINISTRADOR</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="vistaUsersAdmin.html">Usuarios</a></li>
+                    <li><a href="vistaProductosAdmin..html" class="active">Productos</a></li>
+                    <li><a href="#">Proveedores</a></li>
+                    <li><a href="#">Ventas</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Productos</h1>
+                <div class="search-create">
+                    <input type="text" placeholder="Buscar producto...">
+                    <button id="create-product">CREAR PRODUCTO</button>
+                </div>
+            </header>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Fecha Vencimiento</th>
+                        <th>Categoría</th>
+                        <th>Stock</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Avena Alpina 250gr</td>
+                        <td>$ 3.200</td>
+                        <td>12/09/24</td>
+                        <td>Lácteos</td>
+                        <td>15</td>
+                        <td>
+                            <button class="edit-btn">✎</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Chicles Trident X5</td>
+                        <td>$ 2.000</td>
+                        <td>24/06/25</td>
+                        <td>Dulces</td>
+                        <td>30</td>
+                        <td>
+                            <button class="edit-btn">✎</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Paquete Papas Margarita 30g</td>
+                        <td>$ 1.600</td>
+                        <td>05/10/24</td>
+                        <td>Mecato</td>
+                        <td>8</td>
+                        <td>
+                            <button class="edit-btn">✎</button>
+                            <button class="delete-btn">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="JS/productos.js"></script>
+</body>
+</html>
